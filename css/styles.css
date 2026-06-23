@@ -82,8 +82,25 @@ ol {
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 24px 0;
+}
+
+.active {
+  color: #404bbf;
+}
+
+.active::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  display: block;
 }
 
 .nav-link:hover,
@@ -306,7 +323,7 @@ ol {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-card:hover .portfolio-overlay {
+.portfolio-card:hover .portfolio-overlay-text {
   transform: translateY(0);
 }
 
@@ -329,7 +346,7 @@ ol {
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,15 +354,14 @@ ol {
   height: 100%;
   padding: 40px 32px;
   background-color: #4d5ae5;
+  margin: 0;
 
   transform: translateY(100%);
 
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-overlay-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
