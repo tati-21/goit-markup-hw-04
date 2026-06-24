@@ -1,3 +1,4 @@
+/*  #region body */
 img {
   display: block;
 }
@@ -33,10 +34,9 @@ ol {
   margin: 0 auto;
   padding: 0 15px;
 }
+/* #endregion*/
 
-/*
-Header section
-*/
+/* #region Header section */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -134,10 +134,9 @@ Header section
 .address-link:focus {
   color: #404bbf;
 }
+/* #endregion*/
 
-/*
-Hero Section
-*/
+/* #region Hero Section */
 
 .hero-section {
   background-image:
@@ -201,8 +200,9 @@ Hero Section
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* #endregion*/
 
-/* Benefits section */
+/* #region Benefits section */
 
 .benefits-section {
   padding: 120px 0;
@@ -248,10 +248,9 @@ Hero Section
   color: #2e2f42;
   margin: 0 auto;
 }
+/* #endregion*/
 
-/*
-Our Team section
-*/
+/* #region Our Team section */
 
 .team-section {
   background-color: #f4f4fd;
@@ -327,8 +326,9 @@ Our Team section
 .social-link:focus {
   background-color: #404bbf;
 }
+/* #endregion*/
 
-/* Our Portfolio section */
+/* #region Our Portfolio section */
 
 .portfolio-section {
   padding-top: 120px;
@@ -356,12 +356,13 @@ Our Team section
   width: calc((100% - 48px) / 3);
   cursor: pointer;
 
+  /* Transition - Плавність переходу
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 
-  /* або в одну строку: 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+  /* або в одну строку: */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover {
@@ -406,9 +407,13 @@ Our Team section
 
   transform: translateY(100%);
 
+  /* Transition - Плавність переходу
   transition-property: transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+  /* або в одну строку: */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 400;
   font-size: 16px;
@@ -417,7 +422,9 @@ Our Team section
   color: #f4f4fd;
 }
 
-/* Footer section */
+/* #endregion */
+
+/* #region Footer section */
 
 .footer {
   color: #f4f4fd;
@@ -469,3 +476,4 @@ Our Team section
 .footer .social-link:focus {
   background-color: #31d0aa;
 }
+/* #endregion */
